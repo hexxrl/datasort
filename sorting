@@ -9,9 +9,9 @@ def sort_data(data, key=None, reverse=False):
   Returns:
     A sorted list of data points.
   """
-
+#if no key is specified, use the identity function#
   if key is None:
     key = lambda x: x
-
+#sort the data according to the specified key#
   data.sort(key=key, reverse=reverse)
   return data
