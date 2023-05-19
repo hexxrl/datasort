@@ -1,0 +1,17 @@
+def sort_data(data, key=None, reverse=False):
+  """Sorts the data according to the specified key.
+
+  Args:
+    data: A list of data points.
+    key: A function that takes a data point and returns a key value.
+    reverse: A boolean value indicating whether to sort in reverse order.
+
+  Returns:
+    A sorted list of data points.
+  """
+
+  if key is None:
+    key = lambda x: x
+
+  data.sort(key=key, reverse=reverse)
+  return data
