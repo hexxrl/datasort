@@ -1,0 +1,27 @@
+three example ways to excute and command:
+#first way#
+data = [10, 5, 2, 3, 7]
+sorted_data = sort_data(data, key=abs)
+
+print(sorted_data)
+#returns with#
+[2, 3, 5, 7, 10]
+#data is now sorted in ascending order for absolute value#
+
+#second way#
+data = ["a", "b", "c", "d"]
+sorted_data = sort_data(data, key=len)
+
+print(sorted_data)
+#returns with#
+['a', 'b', 'c', 'd']
+#data is now sorted in ascending order for length#
+
+#third way#
+data = [10, 5, 2, 3, 7]
+sorted_data = sort_data(data, key=abs, reverse=True)
+
+print(sorted_data)
+#returns with#
+[10, 7, 5, 3, 2]
+#data is now sorted in descending order for absolute value#
